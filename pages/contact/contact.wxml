@@ -1,0 +1,35 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="scroll-container">
+    <swiper scroll-x="true" class="banner-swiper" indicator-dots="true">
+      <block wx:for="{{bannerList}}" wx:key="*this">
+        <swiper-item>
+          <image class="banner-image" src="{{item}}" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="separator"/>
+
+    <view class="tag-bar">
+      <block wx:for="{{tags}}" wx:key="index">
+        <view class="{{index === selectedTagIndex ? 'tag-item tag-item-selected' : 'tag-item'}}"
+              data-tag-index="{{index}}" bindtap="onPress">
+          {{item.text}}
+        </view>
+      </block>
+    </view>
+    <view class="content-container">
+      <block wx:if="{{tags[selectedTagIndex].image}}">
+        <image class="content-image" src="{{tags[selectedTagIndex].image}}" mode="aspectFill"/>
+      </block>
+
+      <block wx:elif="{{tags[selectedTagIndex].contents && tags[selectedTagIndex].title}}">
+        <view class="title">{{tags[selectedTagIndex].title}}</view>
+        <block wx:for="{{tags[selectedTagIndex].contents}}" wx:key="*this">
+          <view class="content">
+            <text>{{item}}</text>
+          </view>
+        </block>
+      </block>
+    </view>
+  </scroll-view>
+</view>
