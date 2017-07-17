@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <view class="container">
   <scroll-view scroll-y="true" class="scroll-container">
-    <swiper scroll-x="true" class="banner-swiper" indicator-dots="true">
+    <swiper scroll-x="true" class="banner-swiper" indicator-color="rgba(24, 26, 29, 0.3)"
+            indicator-active-color="rgba(24, 26, 29, 0.5)" indicator-dots="true">
       <block wx:for="{{bannerList}}" wx:key="*this">
         <swiper-item>
           <image class="banner-image" src="{{item}}" mode="aspectFill"/>

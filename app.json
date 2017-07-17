@@ -1,26 +1,30 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/contact/contact"
   ],
-  "window":{
-    "navigationBarBackgroundColor": "#0099FF",
+  "window": {
+    "navigationBarBackgroundColor": "#242629",
     "navigationBarTitleText": "龙域设计",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor": "#0099FF",
+    "color": "#4d5151",
     "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/tabbar/home.png",
-      "selectedIconPath": "images/tabbar/home_selected.png"
-    }, {
-      "pagePath": "pages/contact/contact",
-      "text": "联系我们",
-      "iconPath": "images/tabbar/contact.png",
-      "selectedIconPath": "images/tabbar/contact_selected.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "images/tabbar/contact.png",
+        "selectedIconPath": "images/tabbar/contact_selected.png"
+      }
+    ]
   }
 }
