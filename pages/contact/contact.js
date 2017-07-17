@@ -2,11 +2,7 @@ Page({
   data: {
     // 这里每张图片对应上方banner图的图片地址
     bannerList: [
-      "http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg",
-      "http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg",
-      "http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg",
-      "http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg",
-      "http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg",
+      "http://ot8jhftru.bkt.clouddn.com/contact_banner1.jpg"
     ],
     /*
      * text为这个标签的文字
@@ -19,13 +15,12 @@ Page({
         text: '商务合作',
         title: 'Get in touch',
         // contents: ['中国.上海.杨浦区政立路150号\r\n江湾体育场环廊111单元', 'bussiness@loedesign.com', '+86 21 3632 1881',],
-        image: 'http://file.baixing.net/201707/f562eedcbbc671d5554ba32d54a4b840.jpg'
+        image: 'http://ot8jhftru.bkt.clouddn.com/contact_bussiness.jpg'
       },
       {
         text: '联系我们',
         title: 'Join us',
-        contents: ['我们，一直在寻找有才华和激情的人\r\n加入我们的团队', 'bussiness@loedesign.com', '+86 21 3632 1881',],
-        // image: ''
+        image: 'http://ot8jhftru.bkt.clouddn.com/contact_joinus.jpg'
       },
     ],
     selectedTagIndex: 0,
