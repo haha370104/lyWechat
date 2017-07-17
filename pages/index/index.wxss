@@ -31,7 +31,7 @@
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
 }
 
@@ -40,7 +40,7 @@
   height: 90%;
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1;
+  width: 130rpx;
   color: #4d5151;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +62,7 @@
 
 .tag-item-selected {
   color: #2b2b2b;
-  border-bottom: 4rpx solid #2b2b2b;
+  border-bottom: 2rpx solid #2b2b2b;
 }
 
 .content-image {
